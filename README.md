@@ -14,14 +14,14 @@ at the end of the script.
 Currently updates are pushed out by Facepunch Studios approximately 5pm EDT every Thursday. 
 
 Features:
-
+-----------
 - Download + Update Rust/Oxide
 - Auto Start Rustide (optional)
 - Create server backups
 - Remove old backups
 
 Usage: 
-
+-----------
 - Check the SET parameters at the start of the Rustide.bat file to customise your server.
 	If backup is enabled "maxbackups" is how many backups it will keep in the folder. 
 	The "backuploc" option is for backup location, you can change it to something like C:\RustBackup if you want or leave it as default
@@ -40,13 +40,14 @@ Already have an Oxide modded server?
 	\<rust>\server\my_server_identity
 
 Known Issues:
+-------------
 - The RAW GitHub server occasionally gives a 503 error, because their proxies are lame. The script will keep retrying
 - There are no checks for the last update, so it will update your Rust+Oxide every time it restarts. 
 - There are no frequency checks for the backup, so it will make a backup every time you restart. 
 
 
 CHANGELOG:
-
+---------
 UPDATE v.1.4
 - Added script for Linux support -- tested on Ubuntu
 
