@@ -2,6 +2,9 @@
 Rust + Oxide 2.0 Server deployment and management 
 
 
+***Oxide 2.0 was discontinued and replaced with Umod***
+*** This script is now deprecated for current Rust servers ***
+
 This script will maintain a Rust Experimental server with Oxide2 Mod by allowing the
 server to update automatically when the script is run. 
 
