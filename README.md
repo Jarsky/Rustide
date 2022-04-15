@@ -2,14 +2,6 @@
 Rust + Oxide 2.0 Server deployment and management 
 
 
-================================================
-Script Name: Rustide
-Version: 1.4
-Publisher: Jarsky
-Last Updated: 13/10/2016
-================================================
-
-
 This script will maintain a Rust Experimental server with Oxide2 Mod by allowing the
 server to update automatically when the script is run. 
 
