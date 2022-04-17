@@ -96,24 +96,25 @@ function fDependencies(){
                         echo -e "${YEL}You are missing some packages to run SteamCMD Properly${NC}\n"
                         echo -e "${YEL}You must run as ${RED}sudo${YEL} for first run e.g sudo ${BASH_SOURCE[0]}${NC}\n"
                         echo -e "${YEL}This is to install required packages${NC}\n"
-                        exit 0
-
+						exit 0
                         fi
                         apt-get -y install lib32gcc-s1 libc6 gcc-multilib screen unzip
-
+						echo ""
+						echo -e "${GRN}You can now start the script normally using ${BASH_SOURCE[0]}${NC}\n"
+						echo ""
+						exit 1						
         elif [ $OS = "CentOS" ] && [ yum -q list installed glibc.i686 &>/dev/null && echo "Error" ]; then
                         if [ "$EUID" -ne 0 ]; then
                         echo -e "${YEL}You are missing some packages to run SteamCMD Properly${NC}\n"
                         echo -e "${YEL}You must run as ${RED}sudo${YEL} for first run e.g sudo ${BASH_SOURCE[0]}${NC}\n"
                         echo -e "${YEL}This is to install required packages${NC}\n"
-                        exit 0
+						exit 0
                         fi
                         yum -y install glibc.i686 libstdc++.i686 screen unzip
-
-        echo ""
-        echo -e "${GRN}You can now start the script normally using ${BASH_SOURCE[0]}${NC}\n"
-        echo ""
-        exit 1
+						echo ""
+						echo -e "${GRN}You can now start the script normally using ${BASH_SOURCE[0]}${NC}\n"
+						echo ""
+						exit 1
         fi
 }
 
