@@ -8,9 +8,9 @@ ECHO.
 ECHO.	    =================================================
 ECHO.	    =                                               =
 ECHO.	    =                                               =
-ECHO.	    =            Rustide v1.42 by Jarsky            =
-ECHO.	    =   This script auto updates Rust + Oxide Mod   =
-ECHO.	    =             Updated 21 October 2016           =
+ECHO.	    =            Rustide v1.7 by Jarsky             =
+ECHO.	    =   This script auto updates Rust Game + uMOD   =
+ECHO.	    =             Updated 01 January 2022           =
 ECHO.	    =                                               =
 ECHO.	    =                                               =
 ECHO.	    =================================================
@@ -20,7 +20,7 @@ ECHO.
 REM :: SET YOUR SERVER SETTINGS HERE
 REM :: YOU MUST CHANGE THE RCON PASSWORD
 
-set _hostname="Rust Server"
+set _hostname="Rustide Server"
 set _ident="rustide"
 set _port="28015"
 set _rport="28016"
@@ -78,7 +78,7 @@ DEL .\steamcmd.zip /q
 
 :_UPDATE
 ECHO	Initiating Rust Update
-.\SteamCMD\steamcmd.exe	+login anonymous +force_install_dir ../Rust +app_update 258550 -beta experimental validate +quit
+.\SteamCMD\steamcmd.exe	+force_install_dir +login anonymous ../Rust +app_update 258550 -beta experimental validate +quit
 
 REM ++Get the Oxide Files++
 IF EXIST	.\Oxide-Rust\ {
@@ -87,7 +87,7 @@ RMDIR /s /q .\Oxide-Rust
 }
 
 :_OXIDEUPDATE
-wget.exe -w 3 https://github.com/OxideMod/Snapshots/blob/master/Oxide-Rust.zip?raw=true --no-check-certificate --no-proxy
+wget.exe -w 3 https://github.com/OxideMod/Oxide.Rust/releases/latest/download/Oxide.Rust.zip --no-check-certificate --no-proxy --secure-protocol=TLSv1_2 -O Oxide-Rust.zip
 
 IF EXIST .\Oxide-Rust.zip (GOTO _BACKUP) ELSE GOTO _OXIDEUPDATE
 
@@ -102,6 +102,7 @@ RMDIR /s /q .\temp
 }
 MKDIR .\temp
 XCOPY /i /s /q /y .\rust\server\%_ident%\*.* .\temp\server\%_ident%\
+IF EXIST .\rust\oxide\oxide.config.json XCOPY /i /s /q /y .\rust\oxide\*.* .\temp\oxide\
 REM ::PUT ANY OTHER FILES TO COPY HERE::
 REM ::--------------------------------::
 IF EXIST .\rust\RustDedicated_Data\Managed\*RustIO*.dll XCOPY /i /s /q /y .\rust\RustDedicated_Data\Managed\*RustIO*.dll .\temp\RustDedicated_Data\Managed\
@@ -109,7 +110,7 @@ IF EXIST .\rust\RustDedicated_Data\Managed\*RustIO*.dll XCOPY /i /s /q /y .\rust
 REM ::--------------------------------::
 
 IF "%_savebackup%"=="NO" (GOTO _BUILD)
-IF EXIST .\temp\server\%_ident%\oxide\data\*.json (GOTO _ZIP) ELSE GOTO _BUILD
+IF EXIST .\temp\oxide\data\*.data (GOTO _ZIP) ELSE GOTO _BUILD
 :_ZIP
 SET backupname=backup_%_ident%-%date:~-4,4%.%date:~-7,2%.%date:~-10,2%-%time:~0,2%.%time:~3,2%
 7za.exe a -r "%_backuploc%\%backupname%".zip "%~dp0\temp\*"
