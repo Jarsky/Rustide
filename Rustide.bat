@@ -20,17 +20,17 @@ ECHO.
 REM :: SET YOUR SERVER SETTINGS HERE
 REM :: YOU MUST CHANGE THE RCON PASSWORD
 
-set _hostname="Rustide Test Server"
+set _hostname="Rustide Server"
 set _ident="rustide"
 set _port="28015"
 set _rport="28016"
-set _rcon="rustypass"
+set _rcon="rust123"
 set _players="100"
 set _level="Procedural Map"
 set _seed="0"
 set _worldsize="4000"
 set _serverimg="http://i.imgur.com/yHWZSYQ.png"
-set _serverurl="http://oxidemod.org"
+set _serverurl="http://umod.org"
 set _serverdesc="Welcome to our Rustide server!"
 
 REM :: HERE ARE SOME MORE ADVANCED SETTINGS
