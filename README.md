@@ -1,3 +1,5 @@
+![yHWZSYQ](https://user-images.githubusercontent.com/839416/163700725-a12f9d90-d922-485a-b92b-2ae377aa6ebe.png)
+
 # Rustide
 Rust + Oxide 2.0 Server deployment and management 
 
