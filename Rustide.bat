@@ -20,11 +20,11 @@ ECHO.
 REM :: SET YOUR SERVER SETTINGS HERE
 REM :: YOU MUST CHANGE THE RCON PASSWORD
 
-set _hostname="Rustide Server"
+set _hostname="Rustide Test Server"
 set _ident="rustide"
 set _port="28015"
 set _rport="28016"
-set _rcon="rust123"
+set _rcon="rustypass"
 set _players="100"
 set _level="Procedural Map"
 set _seed="0"
