@@ -20,20 +20,20 @@ Features:
 
 Usage: 
 -----------
-- Check the SET parameters at the start of the Rustide.bat file to customise your server.
-	If backup is enabled "maxbackups" is how many backups it will keep in the folder. 
+- Check the SET parameters at the start of the Rustide.bat file to customise your server.<br>
+	If backup is enabled "maxbackups" is how many backups it will keep in the folder.<br> 
 	The "backuploc" option is for backup location, you can change it to something like C:\RustBackup if you want or leave it as default
-	for the Rustide folder.
-	****MULTIPLE SERVER BACKUPS**** 
+	for the Rustide folder.<br>
+	****MULTIPLE SERVER BACKUPS****<br> 
 	If you just want to use this script for update+backup, then just change "autostart" to no
-- Just run Rustide.bat when you're ready. 
+- Just run Rustide.bat when you're ready. <br>
 - Want to run multiple servers? Just make multiple Rustide folders with different names (for seperate installs) or copy the Rustide.bat 
-  file and change "ident" to something meaningful for each server.
+  file and change "ident" to something meaningful for each server.<br>
 
 Already have an Oxide modded server? 
 
-- Run this script once then quit the server. 
-- Copy configuration files from your current server. Folders to copy are:
+- Run this script once then quit the server. <br>
+- Copy configuration files from your current server. Folders to copy are:<br>
 	\<rust>\RustDedicated_Data\Managed
 	\<rust>\server\my_server_identity
 
