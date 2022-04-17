@@ -1,17 +1,13 @@
 # Rustide
 Rust + Oxide 2.0 Server deployment and management 
 
-
+***This script is now deprecated for current Rust servers***<br>
 ***Oxide 2.0 was discontinued and replaced with Umod***
-***This script is now deprecated for current Rust servers***
 
-This script will maintain a Rust Experimental server with Oxide2 Mod by allowing the
-server to update automatically when the script is run. 
 
-It will check and update both Rust Experimental & Oxide 2, and start the server automatically
-at the end of the script. 
-
-Currently updates are pushed out by Facepunch Studios approximately 5pm EDT every Thursday. 
+This script will maintain a Rust Experimental server with Oxide2 Mod by allowing the server to update automatically when the script is run.<br>
+It will check and update both Rust Experimental & Oxide 2, and start the server automaticallyat the end of the script.<br>
+Currently updates are pushed out by Facepunch Studios approximately 5pm EDT every Thursday.<br>
 
 Features:
 -----------
