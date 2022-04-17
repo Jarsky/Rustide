@@ -1,8 +1,8 @@
 ================================================
 Script Name: Rustide
-Version: 1.4
+Version: 1.7
 Publisher: Jarsky
-Last Updated: 13/10/2016
+Last Updated: 01.01.2022
 ================================================
 
 
@@ -47,6 +47,9 @@ Known Issues:
 
 
 CHANGELOG:
+
+UPDATE v.1.7
+- Updated scripts for uMod & Newer Linux versions -- tested on Ubuntu 21.04 LTS
 
 UPDATE v.1.4
 - Added script for Linux support -- tested on Ubuntu
