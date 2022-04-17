@@ -6,6 +6,7 @@ Rust + Oxide 2.0 Server deployment and management
 ***This script is now deprecated for current Rust servers***<br>
 ***Oxide 2.0 was discontinued and replaced with Umod in 2019***
 
+It's recommended to use uMod Agent to deploy uMod Servers: https://umod.org/agent
 
 This script will maintain a Rust "Experimental" server with Oxide2 Mod by allowing the server to update automatically when the script is run.<br>
 It will check and update both Rust Game & Oxide 2, and start the server automatically at the end of the script.<br>
