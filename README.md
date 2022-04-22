@@ -47,6 +47,9 @@ Known Issues:
 
 CHANGELOG:
 ---------
+UPDATE v.1.7
+- Updated scripts for uMod & Newer versions -- tested on Windows Server 2022 & Ubuntu 21.04 LTS
+- 
 UPDATE v.1.4
 - Added script for Linux support -- tested on Ubuntu
 
